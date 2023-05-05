@@ -24,8 +24,10 @@ public class UserControllers {
         return userService.addUser(user);
     }
 
+
     @GetMapping("/getAvaialbleWebSeries")
     public Integer getAvailableCountOfWebSeriesViewable(@RequestParam("userId")Integer userId){
+
 
         return userService.getAvailableCountOfWebSeriesViewable(userId);
     }
